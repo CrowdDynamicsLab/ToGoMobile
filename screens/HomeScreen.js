@@ -80,6 +80,7 @@ class MyScene extends React.Component {
     return (
 
       <ScrollView>
+      <Text style={{textAlign: 'center',  fontSize: 18}} > Choose the best answer </Text>
       <View style={styles.test}>
       <PieChart
           style={ { height: 150, flexDirection: 'row'} }

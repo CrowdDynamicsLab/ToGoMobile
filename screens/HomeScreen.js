@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Button, NavigatorIOS, Text, View, StyleSheet,ScrollView} from 'react-native';
+import {Button, NavigatorIOS, Text,TouchableHighlight, View, StyleSheet,ScrollView} from 'react-native';
 import { PieChart } from 'react-native-svg-charts'
 import Svg,{
     Circle,

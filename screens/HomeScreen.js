@@ -80,22 +80,24 @@ class MyScene extends React.Component {
     return (
 
       <ScrollView>
-      <Text style={{textAlign: 'center',  fontSize: 18}} > Choose the best answer </Text>
-      <View style={styles.test}>
-      <PieChart
-          style={ { height: 150, flexDirection: 'row'} }
-          data={ pieData }
-      />
-      <PieChart
-          style={ { height: 150} }
-          data={ pieData }
-      />
-        <Button
-          onPress={this._onForward}
-          title="Continue"
-          color="#841584"
-        />
-      </View>
+        <Text style={{textAlign: 'center',  fontSize: 18}} > Choose the best answer </Text>
+        <View style={styles.test}>
+          <View style={{flex: 1, flexDirection: 'row'}}>
+            <PieChart
+                style={{flex: 1, height: 150}}
+                data={ pieData }
+            />
+            <PieChart
+                style={{flex: 1, height: 150}}
+                data={ pieData }
+            />
+          </View>
+          <Button
+            onPress={this._onForward}
+            title="Continue"
+            color="#841584"
+          />
+        </View>
       </ScrollView>
     );
   }
